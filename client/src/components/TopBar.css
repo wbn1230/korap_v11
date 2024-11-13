@@ -1,0 +1,153 @@
+.topbar_ct {
+  height: 55px;
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+  background-color: #36546c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top_column {
+  display: flex;
+  align-items: center;
+}
+
+.top_column a {
+  text-decoration: none;
+  width: 220px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_column div {
+  color: #fcfcfd;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0px;
+  padding: 15px;
+  width: 160px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.top_column div:hover {
+  cursor: pointer;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top_right_column {
+  display: flex;
+  align-items: center;
+}
+
+.guide {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  right: 5px;
+  /* margin-bottom: 15px; */
+  color: white;
+  border-radius: 30px;
+  background-color: #36546c;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.guide:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.dscrp {
+  margin-left: 5px;
+}
+
+.dscrp_ic {
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.demonstrator {
+  position: relative;
+  display: flex;
+  right: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  color: white;
+  border-radius: 30px;
+  background-color: #597b97;
+  border: 1px solid white;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.demonstrator:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.divider {
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: white;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+}
+
+.login-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* //////////////////////////////////////////////////// */
+
+.toggle-button {
+  position: fixed;
+  background-color: #8c8c8c;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  width: 25px;
+  height: 50px;
+  top: 50%;
+  left: 220px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-button.hidden {
+  transform: translate(-220px, -50%);
+  justify-content: center;
+}

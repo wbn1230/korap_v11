@@ -1,0 +1,98 @@
+.accordion_div {
+  width: 100%;
+  color: #333333;
+  font-size: 12pt;
+  font-weight: bold;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.info {
+  display: block;
+  width: 85%;
+}
+
+.info > p {
+  font-size: 0.8rem;
+}
+
+.info_button:hover {
+  opacity: 0.5;
+}
+
+.info_button_div {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prep {
+  padding: 0.75rem;
+  border-bottom: solid 1px #cccccc;
+  border-top: solid 1px #cccccc;
+}
+
+.footnote {
+  font-size: 7pt;
+  color: #cccccc;
+  padding: 20px;
+}
+
+.fnt {
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+.roadNo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: solid #cccccc 1px;
+  margin: 10px;
+  color: #cccccc;
+}
+
+.roadNo div {
+  color: #666666;
+  font-size: 8pt;
+}
+
+.roadNo:hover {
+  background-color: #e5fcf6;
+}
+.selectRoad {
+  width: 180px;
+  margin: 10px;
+  font-size: 8pt;
+  padding: 5px;
+  border-bottom: solid #cccccc 1px;
+  border-radius: 0% !important;
+}
+.css-13cymwt-control {
+  border-radius: 0px !important;
+}
+
+.css-t3ipsp-control {
+  border-radius: 0px !important;
+  border-color: #cccccc;
+}
+
+.css-t3ipsp-control:hover {
+  border-color: #cccccc !important;
+  background-color: #e5fcf6 !important;
+  box-shadow: 0 0 0 1px #e5fcf6;
+}
+
+.css-t3ipsp-control:active {
+  border-color: #cccccc !important;
+}
+
+.css-10wo9uf-option:hover {
+  background-color: #e5fcf6 !important;
+}
+
+.tmsItem {
+  padding-top: 10px;
+}

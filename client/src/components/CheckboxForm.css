@@ -1,0 +1,96 @@
+.titm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.titm > div {
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+}
+
+.titm_tms {
+  margin-left: 15px;
+}
+
+.titm > div > div {
+  margin-bottom: 2px;
+}
+
+.emi3,
+.emi7,
+.emi10 {
+  margin-bottom: 10px;
+}
+
+.emi1 > .icon {
+  color: #00a6ac;
+}
+.emi2 > .icon {
+  color: #2b96af;
+}
+.emi3 > .icon {
+  color: #5686b2;
+}
+.emi4 > .icon {
+  color: #8176b5;
+}
+.emi5 > .icon {
+  color: #a47ea1;
+}
+.emi6 > .icon {
+  color: #c6858c;
+}
+.emi7 > .icon {
+  color: #e98d78;
+}
+.emi8 > .icon {
+  color: #da5e54;
+}
+.emi9 > .icon {
+  color: #cc2f2f;
+}
+.emi10 > .icon {
+  color: #bd000b;
+}
+
+.emi_des {
+  margin: 15px 0px 15px 12px;
+  font-size: 8pt !important;
+  color: #cccccc;
+}
+
+.custom_cb {
+  display: none;
+}
+
+.custom_cb + .chk_item_div::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 8px;
+  background: white;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.custom_cb:checked + .chk_item_div::before {
+  background-color: #36546c;
+  background-repeat: no-repeat;
+  border: 1px solid #36546c;
+}
+
+.chk_item_div {
+  display: flex;
+  align-items: center;
+  height: auto;
+  line-height: 1px;
+  padding: 7px 0 7px 0;
+}
+
+.chk_item_div:hover {
+  background-color: #e5fcf6;
+}

@@ -1,0 +1,61 @@
+.d1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f2f2f2;
+  color: #0d0d0d;
+  cursor: pointer;
+  border-bottom: solid 1px #cccccc;
+  border-top: solid 1px #cccccc;
+}
+
+.d1:hover {
+  background-color: #e5fcf6;
+}
+
+.expanded {
+  width: auto;
+  font-size: 10pt;
+}
+
+.icon {
+  font-size: 10pt;
+  color: #cccccc;
+  display: flex;
+}
+
+/* .국도번호별_accitem,
+.도로폭별_accitem,
+.차로수별_accitem,
+.교통시설물별_accitem,
+.제한속도별_accitem,
+.중앙분리대유형별_accitem,
+.신호등개수별_accitem,
+.자동차전용도로유무별_accitem,
+.일방통행유무별_accitem,
+.교통량구간_accitem,
+.교통량지점_accitem,
+.차량관점_accitem,
+.보행자관점_accitem,
+.자전거관점_accitem {
+  border-bottom: solid 0.5px #cccccc;
+  border-top: solid 0.5px #cccccc;
+}
+ */
+/* 일반국도현황 메인 아이템 */
+.도로현황_d1,
+.TMS_d1,
+.TAAS_d1,
+.정밀지도_d1 {
+  border-bottom: solid 1px #cccccc;
+  color: #0d0d0d;
+}
+
+.도로현황_exp,
+.TMS_exp,
+.TAAS_exp,
+.정밀지도_exp {
+  border-left: solid 5px #cccccc;
+  border-bottom: solid 1px #cccccc;
+}

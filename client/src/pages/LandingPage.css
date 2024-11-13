@@ -1,0 +1,132 @@
+/* #deckgl-wrapper {
+  cursor: default !important;
+} */
+
+.container {
+  position: relative;
+}
+.lower_container {
+  position: absolute;
+  bottom: 0;
+  border-top: 3px solid black;
+  width: 100%;
+}
+
+.info_temp {
+  position: fixed;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lengthSum {
+  position: fixed;
+  z-index: 1;
+  bottom: 35px;
+  right: 20px;
+  color: #36546c;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.lengthSum span {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #0d0d0d;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.loading-spinner {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 120px;
+}
+.loading-spinner::after {
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  animation: blinking 2s steps(9) infinite;
+  color: #fcfcfd;
+  font-size: 4rem;
+}
+@keyframes blinking {
+  0%,
+  90% {
+    opacity: 1;
+  }
+  5%,
+  95% {
+    opacity: 0;
+  }
+}
+.slider {
+  width: 100%;
+}
+
+.dashBoard_container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #36546caa;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  /* display: none; */
+}
+.dashBoard {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 40%;
+  left: 50%;
+  border: 1px solid blue;
+  background-color: rgba(0, 0, 0, 0);
+}
+.dtbutton {
+  position: fixed;
+  bottom: 35px;
+  right: 360px;
+  z-index: 2;
+  padding: 10px 20px;
+}
+
+.size-button {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 22px;
+  opacity: 0.7;
+  background-color: #8c8c8c;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  z-index: 2;
+  cursor: pointer;
+}
+.size-button:hover {
+  opacity: 1;
+}

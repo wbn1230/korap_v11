@@ -1,0 +1,208 @@
+.d2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  color: #0d0d0d;
+  cursor: pointer;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  border-bottom: solid 1.5px #cccccc;
+  border-top: solid 1.5px #cccccc;
+}
+
+.교차사고_d2:hover,
+.도로사고_d2:hover,
+.별점평가_d2:hover {
+  background-color: #e5fcf6;
+}
+
+/* 최하단 탭에 맞추기 */
+.교차사고_d2 {
+  border-bottom: solid 2px #cccccc;
+}
+
+.expanded2 {
+  width: auto;
+  height: min-content;
+  font-size: 11pt;
+  padding-left: 3px;
+  border-bottom: solid 2.5px #c4c4c4;
+}
+
+.inner-accordion-item {
+  border-top: solid 1px #cccccc;
+  /*   border-left: solid 1px #cccccc;
+  border-right: solid 1px #cccccc; */
+  border-bottom: solid 1px #cccccc;
+  padding: 5px;
+}
+
+/* //////////////////////////////////////////////////// */
+.accdropdown {
+  position: relative;
+  justify-content: center;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.indicator {
+  background: rgb(255, 255, 255);
+  border: solid 1px #8c8c8c;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 10px;
+  width: 160px;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: solid 1px #8c8c8c;
+  border-radius: 5px;
+  right: 7%;
+  top: 90%;
+  width: 180px;
+  background: none;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 10px 5px;
+  display: block;
+  font-size: 9pt;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.dropdown-content button:hover {
+  background-color: #fcfafa;
+  border-color: #36546c;
+}
+
+.accdropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* //////////////////////////////////////////////////// */
+
+.icon_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+}
+
+.icon_button {
+  background: none;
+  border: solid 1px;
+  border-radius: 10px;
+  border-color: #8c8c8c;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.icon_button.selected,
+.icon_button:hover {
+  background-color: #f6fbff;
+  border-color: #36546c;
+  color: #36546c;
+}
+
+.icon_label {
+  text-align: center;
+  font-size: 12px;
+}
+
+.car,
+.walk,
+.bike {
+  width: 55px;
+  height: 75px;
+  font-size: 26px;
+  color: #8c8c8c;
+}
+
+.지표선택_exp,
+.관점_exp,
+.위험도_exp {
+  border-left: solid 5px #cccccc;
+  border-bottom: solid 1px #cccccc;
+}
+
+/* //////////////////////////////////////////////////// */
+
+.checkbox_container {
+  padding: 6px;
+}
+
+.checkbox_label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.checkbox_label:hover {
+  background-color: #e5fcf6;
+}
+
+.checkbox_label input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom box */
+.checkbox_label .custom_checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-right: 12px;
+  cursor: pointer;
+  background: white;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.checkbox_label input[type="checkbox"]:checked + .custom_checkbox::before {
+  background-color: #36546c;
+  background-repeat: no-repeat;
+  border: 1px solid #36546c;
+}
+
+.veryHigh {
+  margin-right: 12px;
+  color: #dd0016cc;
+}
+
+.high {
+  margin-right: 12px;
+  color: #ff7300cc;
+}
+
+.medium {
+  margin-right: 12px;
+  color: #f5cd4bcc;
+}
+
+.low {
+  margin-right: 12px;
+  color: #42b450cc;
+}
+
+.veryLow {
+  margin-right: 12px;
+  color: #48a5dccc;
+}
+
+/* //////////////////////////////////////////////////// */

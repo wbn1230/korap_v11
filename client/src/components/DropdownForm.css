@@ -1,0 +1,71 @@
+/* 일반국도현황 - 도로현황 - 국도번호별 선택 dropdown */
+.dropdown {
+  overflow: auto;
+  height: 130px;
+  margin: 0 10px 10px 10px;
+  padding: 5px;
+  border: solid 1px #cccccc;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  font-size: 10pt;
+}
+
+.option-checkbox {
+  display: none;
+}
+
+.option-label {
+  display: block;
+  padding: 3px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option-label:hover {
+  background-color: #f6fbff;
+}
+
+.option-label.selected {
+  color: #e6003c;
+  font-weight: 900;
+}
+
+/* 좌측하단 Riskprofile - 국도 선택 dropdown */
+.dropdown_container {
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown-rp {
+  position: absolute;
+  overflow: auto;
+  background-color: white;
+  top: 30%;
+  width: 80%;
+  height: 130px;
+  padding: 2px;
+  border: solid 1px #cccccc;
+}
+
+.dropdown-rp ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+}
+
+.option-label2 {
+  display: block;
+  padding: 3px 5px;
+  cursor: pointer;
+  font-size: 9pt;
+}
+
+.option-label2:hover {
+  background-color: #f6fbff;
+}

@@ -1,0 +1,338 @@
+/* justify-content: center; // 좌우 정렬
+align-items: center; // 상하 정렬 */
+
+.detail_div {
+  position: absolute;
+  background-color: #f2f2f2;
+  left: 0px;
+  top: 55px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 55px);
+  width: 220px;
+  align-items: center;
+  border-right: solid transparent 3px;
+  border-image: linear-gradient(to right, #b3b3b3, transparent) 1 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.detail_div.hidden {
+  transform: translateX(-220px);
+}
+
+/* //////////////////////////////////////////////////// */
+
+.buttons_div {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  border-top: 1px dashed black;
+}
+
+.data_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #36546cee;
+  border: solid 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2px;
+  margin-bottom: 0px;
+}
+.data_button:hover {
+  background-color: #edf2f6;
+  color: #36546c;
+}
+
+.profile {
+  width: 65px;
+  height: 60px;
+  font-size: 250%;
+  margin: 0 0 0 25px;
+  color: #fff;
+}
+.profile .profile_text {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #808080;
+  width: 43%;
+  bottom: 90%;
+  padding: 6px;
+  margin-left: 5px;
+  border-radius: 0;
+  border: solid 2px #cccccc;
+  text-align: center;
+  font-size: 0.8rem;
+  /*   line-height: 1.2; */
+  z-index: 1;
+}
+.profile:hover .profile_text {
+  visibility: visible;
+}
+
+.chart {
+  width: 65px;
+  height: 60px;
+  font-size: 200%;
+  margin: 0 25px;
+  color: #fff;
+}
+.chart .chart_text {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #808080;
+  width: 38%;
+  bottom: 90%;
+  padding: 6px;
+  margin-right: 3px;
+  border-radius: 0;
+  border: solid 2px #cccccc;
+  text-align: center;
+  font-size: 0.8rem;
+  /*   line-height: 1.2; */
+  z-index: 1;
+}
+.chart:hover .chart_text {
+  visibility: visible;
+}
+
+/* //////////////////////////////////////////////////// */
+
+.chart_container {
+  border: solid 1.5px #cccccc;
+  background-color: white;
+  position: fixed;
+  top: 55px;
+  left: 221px;
+  width: calc(100vw - 220px);
+  height: calc(100vh - 55px);
+  overflow-x: auto;
+  z-index: 2;
+}
+
+/* //////////////////////////////////////////////////// */
+
+#legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0 -2px 0;
+  font-size: 10pt;
+  font-family: "NanumSquare", sans-serif;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+.checkbox-wrapper label {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+/* misalignment when road not selected :( */
+.checkbox-wrapper-0 label,
+.checkbox-wrapper-1 label,
+.checkbox-wrapper-4 label {
+  top: 2px;
+}
+
+/* .checkbox-wrapper-0 label:before,
+.checkbox-wrapper-1 label:before,
+.checkbox-wrapper-2 label:before,
+.checkbox-wrapper-3 label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+} */
+
+.checkbox-wrapper label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.checkbox-wrapper-5 label:before {
+  /* 교차로 on/off */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label:before {
+  background-color: #666;
+}
+
+.checkbox-wrapper-0 input[type="checkbox"]:checked + label:before {
+  background-color: #f00;
+}
+.checkbox-wrapper-1 input[type="checkbox"]:checked + label:before {
+  background-color: #ec300655;
+}
+.checkbox-wrapper-2 input[type="checkbox"]:checked + label:before {
+  background-color: #004182;
+}
+.checkbox-wrapper-3 input[type="checkbox"]:checked + label:before {
+  background-color: #118df0;
+}
+.checkbox-wrapper-4 input[type="checkbox"]:checked + label:before {
+  background-color: rgba(85, 102, 119, 0.3);
+}
+.checkbox-wrapper-5 input[type="checkbox"]:checked + label:before {
+  background-color: rgba(16, 16, 16, 0.8);
+}
+
+.profile_container {
+  border: solid 1.5px #cccccc;
+  background-color: white;
+  position: fixed;
+  left: 222px;
+  top: 59%;
+  padding-top: 12px;
+  height: calc(40vh);
+  width: calc(100vw - 220px);
+  z-index: 4;
+  transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+.profile_container.hidden {
+  left: 0px;
+  width: 100vw;
+}
+
+.rpoptions {
+  display: flex;
+}
+
+.rp_icon_container {
+  display: flex;
+  position: relative;
+  height: 20px;
+  width: 160px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.rp_icon {
+  background: none;
+  border: solid 1px;
+  border-radius: 10px;
+  border-color: #8c8c8c;
+  cursor: pointer;
+  padding: 5px;
+}
+.rp_icon.car:hover,
+.rp_icon.walk:hover,
+.rp_icon.bike:hover {
+  background-color: #f6fbff;
+  border-color: #36546c;
+  color: #202020;
+}
+
+.rp_icon.car.selected,
+.rp_icon.walk.selected,
+.rp_icon.bike.selected {
+  background-color: #f6fbff;
+  border-color: #36546c;
+  color: #202020;
+}
+
+.rp_icon.car,
+.rp_icon.walk,
+.rp_icon.bike {
+  width: 48px;
+  height: 28px;
+  font-size: 13pt;
+  color: #8c8c8c;
+}
+
+.rp_roadNo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  border-bottom: solid #cccccc 1px;
+  width: 80%;
+  margin-top: -5px;
+  color: #cccccc;
+}
+
+.rp_roadNo div {
+  flex-grow: 1;
+  color: #666666;
+  font-size: 10pt;
+}
+
+.rp_roadNo:hover {
+  background-color: #f6fbff;
+}
+
+.rp_type_selector {
+  display: flex;
+  position: absolute;
+  margin-top: -5px;
+  right: 70px;
+  width: 116px;
+  margin-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rp_button {
+  background: none;
+  border: solid 1px;
+  border-radius: 6px;
+  border-color: #8c8c8c;
+  cursor: pointer;
+  padding: 2px 3px 0 3px;
+  color: #7d7d7d;
+  font-family: "NanumSquare", sans-serif;
+}
+.rp_button.road:hover,
+.rp_button.intersection:hover {
+  background-color: #f6fbff;
+  border-color: #36546c;
+  color: #202020;
+}
+
+.rp_button.road.selected,
+.rp_button.intersection.selected {
+  background-color: #f6fbff;
+  border-color: #36546c;
+  color: #202020;
+}
+
+.rp_button.road,
+.rp_button.intersection {
+  width: 56px;
+  height: 28px;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #8c8c8c;
+}
